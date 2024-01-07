@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.background {
+    position: relative;
+    height: 100vh;
+    width: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: rgb(5, 0, 91);
+    background: rgb(11, 98, 196);
+    background: radial-gradient(circle, rgba(11, 98, 196, 1) 1%, rgba(5, 6, 77, 1) 100%);
+}
+.navbar{
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.sphere1 {
+    margin-top: 0px;
+    position: absolute;
+    width: 100px;
+    
+  }
+  #wrapper{
+    width:900px;
+    -webkit-perspective: 800;
+    -moz-perspective: 800;
+    margin: 150px auto 0 auto;
+  }
+  
+  .carrousel{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    -webkit-transform-style: preserve-3d;
+    -webkit-animation: Caroussel 10s infinite linear;
+    -moz-transform-style: preserve-3d;
+    -moz-animation: Caroussel 10s infinite linear;
+  }
+  
+  .plan{
+    position:absolute;
+    height: 200px;
+    width: 150px;
+    text-align:center;
+    font-size: 8em;
+    color:#FFF;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  @-webkit-keyframes Caroussel{
+    
+    from { -webkit-transform: rotateY(0); }
+    to { -webkit-transform: rotateY(-360deg); }
+  }
+  
+  @keyframes Caroussel{
+    
+    from { transform: rotateY(0); 
+    transform: rotateY(0);}
+    to { transform: rotateY(-360deg);
+    transform: rotateY(-360deg); }
+  }
+  
+  
+  
+  .p1{ -webkit-transform: translateZ(200px);
+    transform: translateZ(200px);}
+  
+  .p2{ -webkit-transform: rotateY(51deg) translateZ(200px);}
+  .p3{ -webkit-transform: rotateY(102deg) translateZ(200px);}
+  .p4{ -webkit-transform: rotateY(153deg) translateZ(200px);}
+  .p5{ -webkit-transform: rotateY(204deg) translateZ(200px);}
+  .p6{ -webkit-transform: rotateY(255deg) translateZ(200px);}
+  .p7{ -webkit-transform: rotateY(306deg) translateZ(200px);}
+  
+  
+  .p1{ -moz-transform: translateZ(200px);}
+  .p2{ -moz-transform: rotateY(51deg) translateZ(200px);}
+  .p3{ -moz-transform: rotateY(102deg) translateZ(200px);}
+  .p4{ -moz-transform: rotateY(153deg) translateZ(200px);}
+  .p5{ -moz-transform: rotateY(204deg) translateZ(200px);}
+  .p6{ -moz-transform: rotateY(255deg) translateZ(200px);}
+  .p7{ -moz-transform: rotateY(306deg) translateZ(200px);}
+  
