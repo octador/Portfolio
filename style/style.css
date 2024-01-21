@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    height: 100vh;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: rgb(5, 0, 91);
+    background: rgb(11, 98, 196);
+    background: radial-gradient(circle, rgba(11, 98, 196, 1) 1%, rgba(5, 6, 77, 1) 100%);
+    display: grid;
+    place-items: end start;
+    font-family: system-ui, sans-serif;
+    padding: 1.5rem;
+
+}
+
+.backgroundnavbar {
+    font-weight: 700;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.textnavbar {
+    font-weight: 700;
+    font-family: 'Roboto Condensed', sans-serif;
+    border: solid 2px;
+    border-radius: 15px;
+    padding-left: 3px;
+    padding-right: 3px;
+
+}
+
+.texttoggle {
+
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+/* ------------------------------------click----------------------------------------------- */
+/* label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    user-select: none;
+  } */
+
+input[type="color"] {
+    --size: 2em;
+    flex-shrink: 0;
+    appearance: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: var(--size);
+    width: var(--size);
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+}
+
+input[type="color" i]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+input[type="color" i]::-webkit-color-swatch {
+    border-radius: 50%;
+}
+
+input[type="color" i]::-moz-color-swatch {
+    border-radius: 50%;
+}
+
+::-webkit-color-swatch,
+::-moz-color-swatch {
+    border-color: transparent;
+}
