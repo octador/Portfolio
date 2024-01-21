@@ -16,8 +16,7 @@ body {
     width: auto;
     background-repeat: no-repeat;
     background-size: cover;
-    background: rgb(5, 0, 91);
-    background: rgb(11, 98, 196);
+    
     background: radial-gradient(circle, rgba(11, 98, 196, 1) 1%, rgba(5, 6, 77, 1) 100%);
     display: grid;
     place-items: end start;
@@ -25,8 +24,17 @@ body {
     padding: 1.5rem;
 
 }
+.navbar{
+    z-index: 4;
+  
+    background: radial-gradient(circle, rgba(11, 98, 196, 1) 1%, rgba(5, 6, 77, 1) 100%);
+   
+    border-color: aliceblue;
+    opacity: 0.9;
+}
 
 .backgroundnavbar {
+    
     font-weight: 700;
     font-family: 'Roboto Condensed', sans-serif;
 }
@@ -47,14 +55,16 @@ body {
 }
 
 
-/* ------------------------------------click----------------------------------------------- */
+/* ------------------------------------clicks-park----------------------------------------------- */
 /* label {
     display: flex;
     align-items: center;
     gap: 0.5rem;
     user-select: none;
   } */
-
+.spark{
+    z-index: 10000;
+}
 input[type="color"] {
     --size: 2em;
     flex-shrink: 0;
@@ -83,4 +93,108 @@ input[type="color" i]::-moz-color-swatch {
 ::-webkit-color-swatch,
 ::-moz-color-swatch {
     border-color: transparent;
+}
+/* ---------------------------------carouselle-------------------------- */
+/* Définition d'un container pour gérer l'affichage */
+.container {
+    overflow: hidden;
+    /* Cache les éléments qui dépassent du container */
+}
+/* Définition du carousel */
+.carousel {
+    
+    position: relative;
+    /* Le carousel est positionné relativement à son parent */
+}
+/* Définition de l'élément contenant les diapositives */
+.carousel-inner {
+    display: flex;
+    /* Affiche les éléments en ligne */
+    overflow: hidden;
+    /* Cache les éléments qui dépassent */
+    height: 100vh;
+    /* Hauteur égale à 100% de la hauteur de la vue */
+    flex-wrap: nowrap;
+    /* Empêche les éléments de se placer sur plusieurs lignes */
+}
+/* Définition des diapositives */
+.slide {
+    margin-top: 50px;
+    flex: 0 0 100%;
+    /* Largeur de chaque diapositive est de 100% */
+    height: 100%;
+    /* Hauteur de chaque diapositive est de 100% */
+    transition: .5s ease-in-out;
+    /* Ajout d'une animation douce pour la transition entre les diapositives */
+}
+/* Définition de l'affichage de l'image de chaque diapositive */
+.slide img {
+    opacity: 0.6;
+    /* ajouter de l'opaciter */
+    width: 100%;
+    /* Largeur de l'image est de 100% */
+    height: 100%;
+    /* Hauteur de l'image est de 100% */
+    object-fit: cover;
+    /* Couvre tout l'espace disponible */
+}
+/* Définition des boutons de contrôle du carousel */
+.carousel-controls {
+    position: absolute;
+    /* Les boutons sont absolument positionnés */
+    z-index: 5;
+    /* Ils sont placés au-dessus des autres éléments */
+    left: 0%;
+    /* La distance à gauche est de 10% */
+    right: 0%;
+    /* La distance à droite est de 10% */
+    top: 50%;
+    /* La distance du haut est de 50% */
+    display: flex;
+    /* Affiche les boutons en ligne */
+    justify-content: space-between;
+    /* Espacement égal entre les boutons */
+}
+/* Style des boutons de contrôle */
+/* .carousel-controls button {
+    border: solid 2px;
+    border-radius: 15px;
+    padding: 10px;
+  
+} */
+/* Définition des points de contrôle */
+.carousel-dots {
+    position: absolute;
+    /* Les points sont absolument positionnés */
+    z-index: 5;
+    /* Ils sont placés au-dessus des autres éléments */
+    left: 50%;
+    /* La distance à gauche est de 50% */
+    right: 50%;
+    /* La distance à droite est de 50% */
+    bottom: 10%;
+    /*La distance du bas est de 10% */
+    display: flex;
+    /* Affiche les points en ligne */
+    justify-content: center;
+    /* Centrage des points */
+}
+/* Style des points de contrôle */
+.carousel-dots .dot {
+    border-radius: 50%;
+    /* Les points sont en forme de cercle */
+    margin: 5px;
+    /* Ajout d'un margin pour un meilleur contrôle */
+    cursor: pointer;
+    /* Curseur en forme de main pour un meilleur contrôle */
+}
+/* Styles pour les points de navigation du carrousel */
+.carousel-dots .active {
+    /* Border de 10px pour le point actif */
+    border: 10px solid #761530 !important;
+    /* !important permet de surcharger les autres styles éventuels */
+}
+.carousel-dots .inactive {
+    /* Border de 10px pour les points inactifs */
+    border: 10px solid #2596be;
 }
