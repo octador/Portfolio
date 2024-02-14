@@ -39,7 +39,7 @@ header {
 .nav :hover {
     scale: 1.1;
     color: #3b3b3b;
-    color: #d3d3d3;
+    color: #ffcf6c;
 
 
 }
@@ -73,7 +73,7 @@ h1 {
 
     display: flex;
     /* flex-wrap: wrap; */
-    padding-left: 20%;
+    /* padding-left: 20%; */
 
 }
 
@@ -108,23 +108,33 @@ h1 {
     background-color: #3b3b3b;
     font-family: "Poppins", sans-serif;
     display: flex;
-    padding-left: 5%;
+    justify-content: center;
+    /* padding-left: 5%; */
     padding-top: 5%;
-
+    /* text-align: center; */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.500);
 }
 
+.about_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
 #about h2 {
+
     font-weight: 700;
 
 }
 
 #about p {
-    padding-top: 10%;
-    text-align: start;
+    padding-top: 5%;
+
+    text-align: center;
     max-width: 70%;
     height: auto;
-    font-size: 25px;
+    font-size: 2em;
 
 }
 
@@ -132,6 +142,7 @@ h1 {
     font-weight: 600;
     color: #ffcf6c;
 }
+
 
 #skills {
     padding: 10% 10%;
@@ -142,9 +153,10 @@ h1 {
 
 }
 
-#skills div h1 {
+#skills div h2 {
     padding-top: 10px;
     font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.500);
 }
 
 .logo {
@@ -160,11 +172,8 @@ h1 {
 
 .logo div {
     background-color: #686a74;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    margin-top: 5%;
+    padding: 3%;
+    margin-top: 2%;
     width: 150px;
     height: auto;
 
@@ -174,50 +183,54 @@ h1 {
 
 
 
-#project{
+#project {
     background-color: #3b3b3b;
     display: flex;
-      
-    
+
 }
 
-.project-icon{
-    
+.project-icon {
+    width: 50%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 15px;
-    justify-content: center;
-    
+
+
+
 }
 
 
-#project_container{
-    
+#project_container {
+
+    align-items: center;
     display: flex;
     flex-direction: column;
-    
+
 }
-#project_container h2{
-    margin-bottom: 40px;
+
+#project_container h2 {
+    padding-bottom: 5%;
     text-align: center;
     font-weight: 700;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.500);
 }
-#project_container h3{ 
+
+#project_container h3 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.500);
     text-align: center;
     margin-bottom: 30px;
 }
-.project-icon div{
+
+.project-icon div {
     padding: 2%;
     border-radius: 15px;
     background-color: #686a74;
     margin-bottom: 5%;
 }
 
-#contact{
-    
+#contact {
+
     padding: 3%;
     gap: 5%;
     border-top: solid 3px;
@@ -225,9 +238,41 @@ h1 {
     display: flex;
     justify-content: center;
 }
+
 #contact a:hover {
-scale:1.2;
+    scale: 1.2;
 }
+
 #contact img:hover {
-    scale:1.2;
+    scale: 1.2;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+    #about p {
+        font-size: 1rem;
+        /* Utilisez la valeur souhaitée pour la taille de police */
     }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .project-icon{
+        width: 100%;
+    }
+    .logo div {
+        width: 100px;
+        height: auto;
+        margin-top: 5%;
+    }
+    .logo div svg{
+        
+        width: 50%;
+    }
+    .logo div h4{
+        font-size: 1rem;
+    }
+}
