@@ -194,9 +194,24 @@ h1 {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 15px;
+}
 
+.project-icon div {
+    padding: 2%;
+    border-radius: 15px;
+    background-color: #686a74;
+    margin-bottom: 5%;
+}
 
+.project-icon div:hover {
+    scale: 1.05;
+    color: aliceblue;
+   background-color: #ffcf6c;
+}
 
+.project-icon a {
+    color: #c1c1c179;
+    text-decoration: none;
 }
 
 
@@ -221,12 +236,6 @@ h1 {
     margin-bottom: 30px;
 }
 
-.project-icon div {
-    padding: 2%;
-    border-radius: 15px;
-    background-color: #686a74;
-    margin-bottom: 5%;
-}
 
 #contact {
 
@@ -259,19 +268,22 @@ h1 {
         font-size: 1.3rem;
     }
 
-    .project-icon{
+    .project-icon {
         width: 100%;
     }
+
     .logo div {
         width: 100px;
         height: auto;
         margin-top: 5%;
     }
-    .logo div svg{
-        
+
+    .logo div svg {
+
         width: 50%;
     }
-    .logo div h4{
+
+    .logo div h4 {
         font-size: 1rem;
     }
 }
