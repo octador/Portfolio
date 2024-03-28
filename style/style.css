@@ -196,18 +196,18 @@ h1 {
     gap: 15px;
 }
 
-.project-icon div {
+/* .project-icon div {
     padding: 2%;
     border-radius: 15px;
     background-color: #686a74;
     margin-bottom: 5%;
-}
+} */
 
-.project-icon div:hover {
+/* .project-icon div:hover {
     scale: 1.05;
     color: aliceblue;
    background-color: #ffcf6c;
-}
+} */
 
 .project-icon a {
     color: #c1c1c179;
